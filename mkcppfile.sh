@@ -36,10 +36,9 @@ done
 # Replaces file extension if added
 
 file=${filename%%.*}
-echo "Replaced file extension"
+echo "Changed file extension to .cpp"
 cat <<- "EOF" > $file.cpp
-	#include <cstdio.h>
-	#include <iostream>
+	#include <stdio.h>
 	#include <opencv2/opencv.hpp>
 
 	using namespace cv;
