@@ -25,6 +25,8 @@ do
 		else
 			echo "Please enter a valid response"
 		fi
+	else
+		let count=1
 	fi
 done
 
