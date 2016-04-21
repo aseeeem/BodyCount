@@ -6,10 +6,9 @@
 # Date Started: Sat Mar 12 17:08:39 EST 2016
 # Date Completed: Sat Mar 12 17:54:54 EST 2016
 
-let count=0
 read -p "This will create a CMakeLists.txt file. Press [Enter] to continue..."
-
-while [ $count -eq 0 ]
+count=0
+while [ "$count" -eq "0" ];
 do
 	if [ -f "CMakeLists.txt" ]
 	then
@@ -21,7 +20,7 @@ do
 		elif [ "$conf" == "Y" ]
 		then
 			echo "Continuing with overwrite..."
-			let count=1
+			count=1
 		else
 			echo "Please enter a valid response"
 		fi
