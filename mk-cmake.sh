@@ -24,6 +24,8 @@ do
 		else
 			echo "Please enter a valid response"
 		fi
+	else
+		count=1
 	fi
 done
 
@@ -35,6 +37,6 @@ cat <<- EOF > CMakeLists.txt
 	project( $projectName )
 	find_package( OpenCV REQUIRED )
 	add_executable( $projectName $sourceFile )
-	target_link_libraries( $projectName ${OpenCV_LIBS} )
+	target_link_libraries( $projectName \${OpenCV_LIBS} )
 EOF
 echo "Done."
