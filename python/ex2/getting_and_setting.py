@@ -1,7 +1,7 @@
 import argparse
 import cv2
 
-# This file will change the value of a 100x100 box into all green
+# This file will make a green square in the top right!
 # Yay! 
 
 ap = argparse.ArgumentParser()
