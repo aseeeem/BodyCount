@@ -1,7 +1,6 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
-#include <highgui.h>
-#include <cv.h>
+#include <opencv2/highgui/highgui.hpp>
 
 using namespace cv;
 
