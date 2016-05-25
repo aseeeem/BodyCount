@@ -23,6 +23,8 @@ plt.ylabel("# of Pixels")
 # For loop
 # For each channel and color in channels and colors
 # create a histogram using that specific color for the line color
+# The zip command allows the data members of chans and colors to be paired
+# in numerical order, which is nice
 for (chan, color) in zip(chans, colors):
     hist = cv2.calcHist([chan], [0], None, [256], [0, 256])
     plt.plot(hist, color = color)
