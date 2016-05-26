@@ -20,5 +20,5 @@ cv2.imwrite("images/"+mean_filename,thresh)
 thresh = cv2.adaptiveThreshold(blurred, 255,
         cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 15, 3)
 guassian_filename = input("Please name the file (Gassian method) [exclude\
-    extension: ").strip() + ".jpg"
+ extension]: ").strip() + ".jpg"
 cv2.imwrite("images/"+guassian_filename,thresh)
