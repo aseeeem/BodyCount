@@ -9,10 +9,10 @@ arg = vars(ap.parse_args())
 
 image = cv2.imread(arg["image"])
 
-face_cascade=cv2.CascadeClassifier('/home/asim/Documents/BodyCount/python/haar_detection/haarcascade_frontalface_default.xml')
+profile_cascade=cv2.CascadeClassifier('/home/asim/Downloads/opencv-3.1.0/data/haarcascades/haarcascade_profileface.xml')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-faces=face_cascade.detectMultiScale(gray, 1.3, 5)
+faces=profile_cascade.detectMultiScale(gray, 1.3, 5)
 for (x, y, w, h) in faces:
     cv2.rectangle(image, (x, y), (x+w, y+h), (255, 0, 0), 2)
     roi_gray = gray[y:y+h, x:x+w]
