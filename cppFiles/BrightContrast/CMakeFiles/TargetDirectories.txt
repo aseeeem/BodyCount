@@ -1,0 +1,1 @@
+/home/asim/Documents/BodyCount/BrightContrast/CMakeFiles/BrightContrast.dir

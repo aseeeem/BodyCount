@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/BrightContrast.dir/brightness.cpp.o  -o BrightContrast -rdynamic 
