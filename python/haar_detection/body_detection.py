@@ -9,8 +9,7 @@ arg = vars(ap.parse_args())
 
 image = cv2.imread(arg["image"])
 
-body_cascade = cv2.CascadeClassifier(
-        '/home/asim/Documents/opencv/data/haarcascades/haarcascade_upperbody.xml')
+body_cascade = cv2.CascadeClassifier('./haarcascade_upperbody.xml')
 
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 bodys = body_cascade.detectMultiScale(gray, 1.3, 5)
